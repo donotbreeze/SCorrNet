@@ -15,7 +15,7 @@ ECorrNet is implemented in [PyTorch](https://pytorch.org/) and tested with Ubunt
 
 ## Weight
 
-The weight is being uploaded to Google Drive and the link will be given later.
+Before running the code, you need to extract the compressed package in the weights folder firstly.
 
 ## Datasets
 
