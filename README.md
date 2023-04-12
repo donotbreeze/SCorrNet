@@ -13,11 +13,15 @@ ECorrNet is implemented in [PyTorch](https://pytorch.org/) and tested with Ubunt
 - numpy==1.23.5
 - CUDA==11.1
 
+## Weight
+
+The weight is being uploaded to Google Drive and the link will be given later.
+
 ## Datasets
 
 Self-built dataset:
 
-The Self-built dataset link will be given later.
+The self-built dataset is being uploaded to Google Drive and the link will be given later.
 
 DeepDIC dataset:
 
