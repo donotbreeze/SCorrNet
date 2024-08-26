@@ -1,4 +1,4 @@
-from Models.ECorrNet import ECorrNet
+from Models.SCorrNet import SCorrNet
 import torch
 import torchvision
 from PIL import Image
@@ -9,8 +9,8 @@ if __name__ == "__main__":
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     
-    net = ECorrNet().to(device)
-    net.load_state_dict(torch.load('weights/weights.pth', map_location=device))
+    net = SCorrNet().to(device)
+    net.load_state_dict(torch.load('weights/weights_SCorrNet.pth', map_location=device))
     net.eval()
 
 
