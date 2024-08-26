@@ -5,12 +5,11 @@ import torch.nn.functional as F
 import torch.nn.init as init
 
 try:
-    from .CBAM.cbam import cbam_block
+    from .utils.cbam import cbam_block
     from .ENet import ENet
 except:
-    from CBAM.cbam import cbam_block
+    from utils.cbam import cbam_block
     from ENet import ENet
-
 
 class Bottleneck(nn.Module):
     expansion = 4
