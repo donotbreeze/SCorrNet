@@ -14,8 +14,8 @@ if __name__ == "__main__":
     net.load_state_dict(torch.load('weights/weights_SCorrNet.pth', map_location=device))
     net.eval()
 
-    ref_image = Image.open(r"Sample_real/img_00_ref.png").convert('L')
-    tar_image = Image.open(r"Sample_real/img_00_tar.png").convert('L')
+    ref_image = Image.open("Sample_real/img_00_ref.png").convert('L')
+    tar_image = Image.open("Sample_real/img_00_tar.png").convert('L')
     ref_image = torchvision.transforms.ToTensor()(ref_image)
     tar_image = torchvision.transforms.ToTensor()(tar_image)
     image = torch.cat((ref_image, tar_image), dim=0).unsqueeze(dim=0).to(device)
