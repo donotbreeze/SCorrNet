@@ -29,15 +29,15 @@ if __name__ == "__main__":
     plt.figure()
     plt.imshow(dis[0][0],cmap='jet',vmin=dis[0][0].min(),vmax=dis[0][0].max())
     plt.colorbar()
-    plt.savefig("smaple12-dis_x.png")
+    plt.savefig("Results/smaple12-dis_x.png")
 
     plt.figure()
     plt.imshow(dis[0][1],cmap='jet',vmin=dis[0][1].min(),vmax=dis[0][1].max())
     plt.colorbar()
-    plt.savefig("smaple12-dis_y.png")
+    plt.savefig("Results/smaple12-dis_y.png")
 
     plt.figure()
     plt.imshow(mask[0],cmap='gray',vmin=0,vmax=1)
-    plt.savefig("smaple12-mask.png")
+    plt.savefig("Results/smaple12-mask.png")
 
 
