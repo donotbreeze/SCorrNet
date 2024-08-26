@@ -28,14 +28,14 @@ if __name__ == "__main__":
     plt.figure()
     plt.imshow(dis[0][0],cmap='jet',vmin=-10,vmax=10)
     plt.colorbar()
-    plt.savefig("smaple_real00_dis_x.png")
+    plt.savefig("Results/smaple_real00_dis_x.png")
 
     plt.figure()
     plt.imshow(dis[0][1],cmap='jet',vmin=-10,vmax=10)
     plt.colorbar()
-    plt.savefig("smaple_real00_dis_y.png")
+    plt.savefig("Results/smaple_real00_dis_y.png")
 
     plt.figure()
     plt.imshow(mask[0],cmap='gray',vmin=0,vmax=1)
-    plt.savefig("smaple_real00_mask.png")
+    plt.savefig("Results/smaple_real00_mask.png")
 
