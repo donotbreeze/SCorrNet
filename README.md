@@ -1,6 +1,12 @@
 # A loosely coupled serial digital image correlation method based on deep learning
 
-Digital image correlation (DIC) is a non-contact optical measurement method of displacement field, which has been widely used in various fields. Traditional DIC method needs to manually complete the tedious calculation process such as speckle region selection and subset setting to cope with the background. Inspired by the manual selection of speckle region, a loosely coupled serial measurement network SCorrNet is proposed to automatically segment speckle regions and measure its displacement fields, so as to eliminate the influence of background. To further improve the measurement accuracy and practicability, a diverse dataset with speckle images, background and large deformation is proposed. Finally, the proposed method is compared with traditional and learning-based DIC methods on self-built and public datasets, and validated in two practical experiments. The experimental results show that SCorrNet has high accuracy and speckle segmentation capability to reduce the influence of dynamic background. Therefore, our method has high practical value.
+This code serves as a supporting code for the article “A loosely coupled serial digital image correlation method based on deep learning”.
+
+In deformation measurement, the measurement object has various shapes, and the measurement image inevitably contains background. Traditional DIC methods need to complete the complex process of speckle region selection, subset size setting and grid step setting according to the object shape, while the existing deep learning DIC methods are difficult to cope with this situation, especially the dynamic background. 
+In order to address the above issues, a DIC neural network SCorrNet is designed that cascades the segmentation network ENet and the displacement computation network CorrNet for the first time, which first segments the speckle region so that the subsequent network can focuses on the displacement computation of the speckle region. To accomplish the training and evaluation of this network, a self-built dataset containing three types of displacement fields, speckle region mask, reference image and deformed target image is constructed. Meanwhile, based on CorrNet, a parallel structure network PCorrNet is constructed as a comparison network to verify the effectiveness of SCorrNet.
+
+The traditional DIC method and the deep learning methods StrainNet, DeepDIC, DICNet, PCorrNet, SCorrNet are involved in the comparison experiments.
+
 ## Dependencies
 
 SCorrNet is implemented in [PyTorch](https://pytorch.org/) and tested with Ubuntu 20.04, please install PyTorch first following the official instruction.
