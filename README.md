@@ -18,7 +18,15 @@ SCorrNet is implemented in [PyTorch](https://pytorch.org/) and tested with Ubunt
 - numpy==1.23.5
 - CUDA==11.1
 
-## Weight
+## Reference and deformed images
+
+The file records the reference images and deformed images of each sample.
+
+## Results
+
+The file records the results of each sample.
+
+## The weights of different DIC networks
 
 Before running the code, you need to extract the compressed package in the weights folder firstly.
 
