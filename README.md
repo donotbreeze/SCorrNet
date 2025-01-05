@@ -28,7 +28,7 @@ The file records the results of each sample.
 
 ## The weights of different DIC networks
 
-Before running the code, you need to extract the compressed package in the weights folder firstly.
+The file records the weights of different DIC networks.
 
 ## Datasets
 
